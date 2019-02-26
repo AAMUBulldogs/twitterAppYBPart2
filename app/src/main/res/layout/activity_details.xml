@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.codepath.apps.restclienttemplate.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:color/black"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tvAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvUserName"
+        android:layout_alignStart="@+id/tvUserName"
+        android:layout_below="@+id/tvUserName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivProfileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+
+    <ImageButton
+        android:id="@+id/replyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvBody"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="onReplyAction"
+        app:srcCompat="@drawable/replyicon" />
+
+
+        <ImageButton
+            android:id="@+id/rtBtn"
+            android:layout_width="21dp"
+            android:layout_height="19dp"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@id/replyBtn"
+            android:layout_toRightOf="@id/replyBtn"
+            android:layout_marginStart="50dp"
+            app:srcCompat="@drawable/ic_vector_retweet_stroke" />
+
+        <ImageButton
+            android:id="@+id/favoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignTop="@id/replyBtn"
+            android:layout_toRightOf="@id/rtBtn"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_vector_heart_stroke" />
+
+        <TextView
+            android:id="@+id/tvFavs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/replyBtn"
+            android:layout_toRightOf="@id/favoBtn"
+            android:layout_marginStart="5dp"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/dmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignTop="@id/replyBtn"
+            android:layout_toRightOf="@id/favoBtn"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_vector_messages_stroke" />
+
+</RelativeLayout>
