@@ -1,8 +1,9 @@
 # Project 4 - *Twitter Pt. 2*
+Name:Yurik Bethune
 
 **Twitter Pt. 2** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **29** hours spent in total
+Time spent: **48** hours spent in total
 
 ## User Stories
 
@@ -62,27 +63,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
-
-
-Switching from Activities to fragments was fairly challenging since I was often unsure of exactly where to insert my code. Editing the XML manually to fix the UI was also a challenge but I feel a lot better now about designing basic layouts.
+Really Diffclut had a problem with my implentaion!
+But still could not run project smoothly.
 
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
-
-## License
-
-    Copyright [2017] [Samer Kadamani]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
